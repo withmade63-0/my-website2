@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Services Solutions</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Professional web services including website development, hosting, and digital solutions">
+    <meta name="keywords" content="Web Services, Website Development, Hosting, Digital Solutions">
+
+    <style>
+        *
+
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+        }
+
+        body {
+            background: #F9FBFC;
+            color: #334155;
+            line-height: 1.7;
+        }
+
+        /* Smooth animation */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        a {
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        /* Navigation */
+        #navigation-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 80px;
+            background: #FFFFFF;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        #navigation-bar ul {
+            display: flex;
+            list-style: none;
+            gap: 28px;
+        }
+
+        #navigation-bar a {
+            color: #334155;
+            font-weight: 500;
+        }
+
+        #navigation-bar a:hover {
+            color: #4F9DA6;
+        }
+
+        /* Header */
+        #Header {
+            background: linear-gradient(135deg, #A7DADC, #EAF6F6);
+            padding: 120px 20px;
+            text-align: center;
+            animation: fadeDown 1s ease;
+        }
+
+        #Header h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            color: #1E293B;
+        }
+
+        #Header p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        #Header a {
+            background: #4F9DA6;
+            color: #FFFFFF;
+            padding: 14px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        #Header a:hover {
+            background: #3B8C95;
+            transform: translateY(-3px);
+        }
+
+        /* Sections */
+        #feature,
+        #why-us,
+        #working-process,
+        #Testimonials,
+        #Pricing,
+        #statistics,
+        #blog {
+            padding: 80px;
+            background: #FFFFFF;
+            margin-bottom: 35px;
+            animation: fadeUp 1s ease;
+        }
+
+        /* Cards effect */
+        #feature>div,
+        #Pricing>div,
+        #Testimonials>div {
+            background: #F8FAFC;
+            padding: 25px;
+            border-radius: 14px;
+            margin-bottom: 25px;
+            transition: all 0.35s ease;
+        }
+
+        #feature>div:hover,
+        #Pricing>div:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+        }
+
+        /* Headings */
+        h2 {
+            color: #4F9DA6;
+            margin-bottom: 12px;
+        }
+
+        h3 {
+            color: #1E293B;
+        }
+
+        /* Pricing Button */
+        #Pricing a {
+            display: inline-block;
+            margin-top: 15px;
+            background: #4F9DA6;
+            color: #FFFFFF;
+            padding: 10px 22px;
+            border-radius: 6px;
+        }
+
+        #Pricing a:hover {
+            background: #3B8C95;
+        }
+
+        /* Statistics */
+        #statistics {
+            display: flex;
+            justify-content: space-between;
+            background: #EAF6F6;
+            text-align: center;
+        }
+
+        #statistics p:first-child {
+            font-size: 34px;
+            font-weight: bold;
+            color: #4F9DA6;
+        }
+
+        /* Footer */
+        #footer {
+            background: #1E293B;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 35px;
+        }
+
+        /* Animations */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: #25D366;
+            color: #FFFFFF;
+            padding: 14px 22px;
+            border-radius: 50px;
+            font-size: 15px;
+            font-weight: 600;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        .whatsapp-btn:hover {
+            background: #1EBE5D;
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <div id="navigation-bar">
+        <a href="#">
+        </a>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#feature">Services</a></li>
+            <li><a href="#working-process">How We Work</a></li>
+            <li><a href="#Testimonials">Clients</a></li>
+            <li><a href="#Pricing">Plans</a></li>
+            <li><a href="#blog">Resources</a></li>
+        </ul>
+    </div>
+
+    <!-- Header -->
+    <div id="Header" align="center">
+        <h1>Reliable Web Services for Your Business</h1>
+        <p>We design, develop, and manage professional web solutions that drive growth</p>
+        <a href="#feature">Our Services</a>
+    </div>
+
+    <!-- Services -->
+    <div id="feature">
+        <div>
+            <h2>Website Development</h2>
+            <p>Custom-designed websites built for performance, security, and scalability.</p>
+        </div>
+
+        <div>
+            <h2>Web Hosting & Maintenance</h2>
+            <p>Secure, reliable hosting with continuous monitoring and technical support.</p>
+        </div>
+
+        <div>
+            <h2>Digital Integration</h2>
+            <p>API integration, system optimization, and data-driven web solutions.</p>
+        </div>
+    </div>
+
+    <!-- Why Us -->
+    <div id="why-us">
+        <div>
+            <h2>Professional Standards</h2>
+            <p>We follow industry best practices and modern web technologies.</p>
+        </div>
+
+        <div>
+            <h2>Client-Focused Delivery</h2>
+            <p>Tailored solutions aligned with your business objectives.</p>
+        </div>
+    </div>
+
+    <!-- Process -->
+    <div id="working-process">
+        <div>
+            <h2>Our Service Process</h2>
+            <p>A structured approach ensuring quality and reliability.</p>
+        </div>
+
+        <div>
+            <h3>Requirement Analysis</h3>
+            <p>Understanding your needs and technical requirements.</p>
+        </div>
+
+        <div>
+            <h3>Design & Development</h3>
+            <p>Building scalable and secure web solutions.</p>
+        </div>
+
+        <div>
+            <h3>Testing & Deployment</h3>
+            <p>Ensuring quality before launch.</p>
+        </div>
+
+        <div>
+            <h3>Ongoing Support</h3>
+            <p>Continuous maintenance and optimization.</p>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div id="Testimonials">
+        <div>
+            <h2>Trusted by Our Clients</h2>
+            <p>Organizations that rely on our web services.</p>
+        </div>
+
+        <div>
+            <p>"Highly professional web services with excellent support."</p>
+            <h3>Corporate Client</h3>
+        </div>
+
+        <div>
+            <p>"Reliable solutions that helped scale our digital presence."</p>
+            <h3>Startup Founder</h3>
+        </div>
+    </div>
+
+    <!-- Pricing -->
+    <div id="Pricing">
+        <h2>Service Plans</h2>
+        <p>Flexible packages tailored to different business needs.</p>
+
+        <div>
+            <h3>Professional Plan</h3>
+            <p>$1500</p>
+            <ul>
+                <li>Website Development</li>
+                <li>Hosting Setup</li>
+                <li>Security Configuration</li>
+                <li>Technical Support</li>
+            </ul>
+            <a href="#">Request Service</a>
+        </div>
+    </div>
+
+    <!-- Statistics -->
+    <div id="statistics">
+        <div>
+            <p>500+</p>
+            <p>Web Projects</p>
+        </div>
+
+        <div>
+            <p>200+</p>
+            <p>Active Clients</p>
+        </div>
+
+        <div>
+            <p>8+</p>
+            <p>Years Experience</p>
+        </div>
+
+        <div>
+            <p>99%</p>
+            <p>Service Reliability</p>
+        </div>
+    </div>
+
+    <!-- Blog -->
+    <div id="blog">
+        <h2>Web Knowledge Hub</h2>
+        <p>Latest insights on web technologies and digital solutions.</p>
+
+        <div>
+            <h3>Modern Web Development Practices</h3>
+            <p>How businesses can build scalable web platforms.</p>
+            <a href="#">Read More</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <p>© 2025 Web Services Company. All Rights Reserved.</p>
+    </div>
+
+    <a href="https://wa.me/963981291936" class="whatsapp-btn" target="_blank">
+        💬 تواصل عبر واتساب
+    </a>
+
+</body>
+
+</html>
