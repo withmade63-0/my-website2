@@ -9,6 +9,7 @@
     <meta name="description"
         content="Professional web services including website development, hosting, and digital solutions">
     <meta name="keywords" content="Web Services, Website Development, Hosting, Digital Solutions">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         *
@@ -218,6 +219,114 @@
         .whatsapp-btn:hover {
             background: #1EBE5D;
             transform: translateY(-4px);
+        }
+
+        /* ========================= */
+        /* 📱 Responsive Design */
+        /* ========================= */
+
+        @media (max-width: 992px) {
+
+            /* General spacing */
+            #feature,
+            #why-us,
+            #working-process,
+            #Testimonials,
+            #Pricing,
+            #statistics,
+            #blog {
+                padding: 50px 30px;
+            }
+
+            /* Header */
+            #Header {
+                padding: 90px 20px;
+            }
+
+            #Header h1 {
+                font-size: 32px;
+            }
+
+            #Header p {
+                font-size: 16px;
+            }
+
+            /* Navigation */
+            #navigation-bar {
+                flex-direction: column;
+                gap: 15px;
+                padding: 15px 25px;
+            }
+
+            #navigation-bar ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
+            /* Statistics */
+            #statistics {
+                flex-direction: column;
+                gap: 25px;
+            }
+        }
+
+        /* 📱 Small phones */
+        @media (max-width: 576px) {
+
+            #Header h1 {
+                font-size: 26px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            /* Cards spacing */
+            #feature>div,
+            #Pricing>div,
+            #Testimonials>div {
+                padding: 20px;
+            }
+
+            /* WhatsApp Button */
+            .whatsapp-btn {
+                font-size: 14px;
+                padding: 12px 18px;
+                bottom: 15px;
+                right: 15px;
+            }
+        }
+
+        /* 📱 Mobile Navigation - Horizontal */
+        @media (max-width: 768px) {
+
+            #navigation-bar {
+                padding: 12px 15px;
+            }
+
+            #navigation-bar ul {
+                flex-direction: row;
+                /* أفقي */
+                flex-wrap: wrap;
+                /* ينزل سطر جديد إذا ما كفى */
+                justify-content: center;
+                gap: 12px;
+            }
+
+            #navigation-bar li a {
+                font-size: 14px;
+                padding: 6px 10px;
+                white-space: nowrap;
+            }
         }
     </style>
 </head>
